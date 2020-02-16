@@ -30,43 +30,43 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 
  ### VISUALIZING OF NUMERICAL FEATURES
  
- <img src="/images/2.png"/>
+ <img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/2.png?raw=true"/>
  
 **Age**: the bank has called people of from the age of 18 to about 100 but those contacted most are middle aged in there 30's
 **Duration**: the duration of calls is skewed. there are calls longer than 15 minutes, i will have to remove them, because they will       affect our models prediction
 
- <img src="/images/3.png"/>
+ <img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/3.png?raw=true"/>
  
  ### Relationship between Duration of calls and Number of calls with client response
  
- <img src="/images/4.png"/>
+ <img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/4.png?raw=true"/>
  
 **the plot shows that clients that contacted for a shorter duration and a few times have a higher rate of subscription. so the bank      should not persiste on calling clients for a long time and repeatedly**
  
  ### Subscription rate vs Contact Rate against Age groups
  
- <img src="/images/5.png"/>
+ <img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/5.png?raw=true"/>
  
  **The Bank should priotize the eldery(+60) and those below 30. it seems the elderly are subcribing more because of retirement
  the campaign team pritoized the middle aged which had poor returns**
 
 ### Loans(yes,no) vs response rate
 
-<img src="/images/6.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/6.png?raw=true"/>
 
 **older people tend to subscribe more, the bank priotize them because the have a higher response rate(subscription)**
 
 ### subscription rate per JOB
 
-<img src="/images/7.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/7.png?raw=true"/>
 
 **Students and Retired People yet have the most subscriptions rates**
 
 ### HEATMAP AND CLUSTERMAP TO VISUALIZE CORRELATION AMONG FEATURES AND RESPONSE AND MULTICOLLINEARITY
 
-<img src="/images/8.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/8.png?raw=true"/>
 
-<img src="/images/9.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/9.png?raw=true"/>
 
 **emp.var.rate(employment variation rate) is highly collinear with nr.employed(number of employees) and euribor3m(euribor 3 month rate)/euro interest rate. illl use variance inflation factor to remove one of th features**
 **cons.price.idx(consumer confidence index) is collinear with euribor3m, emp.var.rate and nr.employed which i further studied using variance_inflation_factor check out notebook**
@@ -85,13 +85,13 @@ feature inputs for models was done using 70/30 split for training and testing
 
 LogisticRegression, GaussianNB, KNeighborsClassifier XGBoost, lightgbm algorithms were used and the best performing was chosen for the final model.
 
-<img src="/images/10.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/10.png?raw=true"/>
 
 **The LightGM Model outperforms all models but at the expense of having a high variance with a roc_auc_score of 75% with std of 0.014, while the GaussianNB model had a roc_auc_score of 73% with std of 0.00999. ill use The Naives Bayes Model(GuassianNB) because of it interpretability(its clear for each feature how much it affects the prediction)**
 
 ### RESULTS
 
-<img src="/images/11.png"/>
+<img src="https://github.com/MusahO/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/blob/master/images/11.png?raw=true"/>
 
 A naive bayes model was successfully built for the classifcation problem. The bank will be able to predict a client's response to its telemarketing campaign before contacting him/her. The bank should priotize clients who are highly likely to accept term deposits, and call less to those who are unlikely to make term deposits.
 
