@@ -23,7 +23,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
  ### VISUALIZING OF CATEGORICAL FEATURES
  
  ![image 1](/images/1.png)
- ![image 1]({{site.url}}/images/1.PNG)
+ <img src="/images/1.png"/>
  
 **The dataset is clearly unbalanced as we can see mot of the catgeorical features there is a very low number of subscribers compared to    the those that didn't**
 **in the job categorical feature, it seems the subcribe/nonsubcribe ratio for students and retired is worth the study(doesnt look that    imbalanced)**
