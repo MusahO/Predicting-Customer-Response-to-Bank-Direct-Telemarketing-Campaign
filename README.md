@@ -10,4 +10,4 @@ Telemarketing is a method of direct marketing in which a salesperson solicits pr
 **DATA**
 [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing#)
  
- PROJECT SUMMARY: https://musaho.github.io/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/
+ **PROJECT SUMMARY:** https://musaho.github.io/Predicting-Customer-Response-to-Bank-Direct-Telemarketing-Campaign/
